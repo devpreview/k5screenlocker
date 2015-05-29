@@ -8,7 +8,7 @@ if [ "$ktimeout" -eq 0 ]; then
     exit 0
 fi
 
-delay=`echo "$ktimeout * 60 - 10" | bc`
+delay=`echo "$ktimeout * 60 / 2 - 10" | bc`
 notify=true
 
 while true
